@@ -1,5 +1,5 @@
 # Complexity
-*Pages 17-XX*
+*Pages 17-40*
 
 Multiple qualifications identify classes of problems based on time complexity; many problems are related 
 in some abstract way and can be reduced from one to another.
@@ -38,7 +38,7 @@ This is quite common--one version of a problem classified differently than its d
 Decision problems are almost always NP-Complete because the answer to the problem can be verified, while 
 combinatorial problems are NP-Hard. 
 
-##### ELI5: P, NP, NP-Hard, NP-Complete
+#### ELI5: P, NP, NP-Hard, NP-Complete
 *https://www.reddit.com/r/explainlikeimfive/comments/t3fp4/eli5_np_completeness/c4j7rsj/*
 * **P:** The set of all problems that can be solved in polynomial time (polynomial in relation to the input) 
 by a deterministic Turing machine.
@@ -69,13 +69,13 @@ if ((x && y) && (x && !y) || ((x || y) && (x || !y)) {
 ```
 SAT wants to know what values for `x` and `y` will return `true`.
 
-##### Richard Karp, 1972 -- *Reducibility Among Combinatorial Problems*
+#### Richard Karp, 1972 -- *Reducibility Among Combinatorial Problems*
 > https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems*
 
 A number of NP problems can be reduced to NP in polynomial time; *Karp's 21 NP-Complete Problems*. Taking a 
 look at a few:
 
-**Knapsack**
+##### Knapsack
 Around for over 100 years, this is a combinatorial optimization problem centering on packing a bag for the
 weekend. 
 
@@ -85,7 +85,7 @@ weekend.
 
 tl; dr optimize combination of price and weight for limited space.
 
-**Clique**
+##### Clique
 Formulated in 1935 and relating to graphs and graph theory:
 
 > Consider a social network, where the graph's vertices represent people, and the graph's edge represent
@@ -95,7 +95,7 @@ Formulated in 1935 and relating to graphs and graph theory:
 The solution to this problem could apply to any social aspect of an application, or grouping of things
 like "things" that are self-assembling. 
 
-**Bin Packing**
+##### Bin Packing
 A variation of Knapsack:
 
 >...objects of different volumes must be packed into a finite number of bins or containers each of volume
@@ -106,7 +106,7 @@ optimally requires carrying out every possible iteration to prove that ours is t
 a decision problem by iterating over bin configurations and asking whether the current configuration is
 optimal, and this reduction would classify it as NP-complete. 
 
-**Travelling Salesman**
+##### Travelling Salesman
 Find the cheapest way to send a salesman on a trip:
 
 >Given a list of cities and the distances between each pair of cities, what is the shortest possible route
